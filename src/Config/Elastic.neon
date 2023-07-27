@@ -194,7 +194,7 @@ services:
 	 		- setLogger(@spameriElasticSearch.elasticPanelLogger)
 
 	client:
-		class: Elasticsearch\Client
+		type: Elasticsearch\Client
 		factory: @spameriElasticSearch.clientBuilder::build
 
 	dateTimeProvider:
